@@ -1,0 +1,125 @@
+.abtmaind {
+  height: 100vh;
+  background-color: rgb(247, 245, 245);
+  width: 100%;
+}
+
+.abtd1 {
+  text-align: center ;
+}
+
+.abtp1 {
+  top: 30px;
+  position: relative; text-align: center; font-size: 25px;
+}
+
+.abtp1::after {
+  margin-top: 1%;
+  position: absolute;
+  display: block;
+  content: '';
+  background-color: green;
+  height: 2px;
+  left: 47%;
+  right: 47%;
+}
+
+.abtpp1 {
+  font-size: 20px;
+  margin-top: 60px;
+  line-height: 2;
+}
+
+.email-sender {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  outline: none;
+}
+
+.email-sender input {
+  width: 20%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+  outline: none;
+  border-width: 0.1px;
+}
+
+.email-sender textarea {
+  height: 60px;
+  width: 18%;
+  padding: 4px 4px;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.email-sender textarea::placeholder {
+  font-size: medium;
+}
+
+.email-sender button {
+  padding: 10px 30px;
+  border-radius: 15px;
+  border: none;
+  background-color: rgba(29, 112, 29, 0.7);
+  color: white;
+  font-family: sans-serif;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+.email-sender button:hover {
+  background-color: rgba(6, 136, 6, 0.7);
+  cursor: pointer;
+}
+
+.email-sender button:active {
+  background-color: white;
+  color: rgba(29, 112, 29, 0.7);
+  transition: none;
+}
+
+@media (max-width: 40rem){
+  .email-sender input {
+    width: 40%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    outline: none;
+    border-width: 0.1px;
+  }
+  
+  .email-sender textarea {
+    min-height: 80px;
+    width: 40%;
+    padding: 4px 4px;
+    outline: none;
+    margin-bottom: 15px;
+  }
+  
+}
+
+@media (min-width: 634px) and (max-width: 1391px) {
+  .abtpp1 {
+    font-size: 20px;
+    margin-top: 60px;
+    line-height: 2;
+  }
+}

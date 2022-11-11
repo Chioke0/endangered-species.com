@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Endangered Species</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="help-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Source+Serif+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="about.css">
+  </head>
+  <body>
+    <div>
+      <div class="header">
+        <div class="leftsection">
+          <p class="htitle">Endangered Species</p>
+        </div>
+        <nav class="right-section1off" id="stuf">
+          <ul class="linkss">
+            <li>
+              <a href="#Home">
+                HOME
+              </a>
+            </li>
+            <li>
+              <a href="https://www.wwf.org.uk/learn/wildlife/endangered-animals" target="_blank">
+                ENDANGERED SPECIES
+              </a>
+            </li>
+            <li>
+              <a href="https://wildanimalhealthfund.org/help-endangered-animals/" target="_blank">
+                HOW CAN I HELP?
+              </a>
+            </li>
+            <li>
+              <A href="https://education.nationalgeographic.org/resource/endangered-species" target="_blank">
+                LEARN MORE
+              </A>
+            </li>
+            <li>
+              <A href="#upwork">
+                FROM UPWORK?
+              </A>
+            </li>
+          </ul>
+        </nav>
+        <div class="men-div1" id="mendiv" onclick="buttonclick()">
+          <img src="icons/menu.png" id="menu">
+        </div>
+      </div>
+      <script>
+        function buttonclick() {    
+        const menuList = document.getElementById("stuf");    
+        if (menuList.className == "right-section1")    
+        {    
+        
+            menuList.className = "right-section1off";    
+        } else    
+        {    
+        
+            menuList.className = "right-section1";    
+        }    
+          }   
+      </script>
+    </div>
+    <div class="follow-up" id="Home">
+      <div class="head-followup">
+        <p class="firstp">
+          The Change Starts With You
+         </p>
+         <p class="second-p">
+          Numerous Species Are At Risk Of Extinction Everyday
+         </p>
+      </div>
+    </div>
+    <div class="divv1">
+      <div>
+        <p class="p1">
+          Why Are Species Endangered?
+        </p>
+        <p class="p2">
+          An endangered species is a species that is very likely to become extinct in the near future, either worldwide or in a particular political jurisdiction. Endangered species may be at risk due to factors such as habitat loss, poaching and invasive species.
+        </p>
+        <div class="hpdv1">
+          <div class="intoddiv1">
+            <p class="tit1">LOSS OF HABITAT</p>
+            <p class="ep1">
+              Habitat loss (degradation and/or destruction) and fragmentation (turning large areas of habitat into smaller disconnected patches) may result from direct land clearing, contamination and/or negative environmental affects due to human activities including agriculture, plantation harvesting, mining, building construction and other landscape changes.
+              <br>
+              Habitat loss poses major welfare risks including preventing safe animal movement across the landscape, restricting expression of normal behaviours and denying animals’ access to basic needs such as food, water and shelter. Other impacts include stress, injury, illness, pain, psychological distress and death. It is estimated that over 50 million mammals, birds and reptiles are killed every year due to land clearing in Queensland and NSW alone. Furthermore, loss of animals from land clearing can cause negative ecological effects such as disruption of natural food chains. This can lead to further negative impacts on animals which may not have been directly affected by the initial land clearing
+            </p>
+          </div>
+          <div class="lod1">
+            <img src="habitat/fox-7107267.jpg" class="loh1">
+          </div>
+        </div>
+        <div>
+          <hr style="margin-top: 50px;" color="green" size="0.5">
+          <div class="rwadiv1">
+            <div class="rsd1"></div>
+            <div id="p">
+              <p class="rwa1">
+                POACHING
+              </p>
+              <p class="rwa2">
+                Poachers sometimes kill or capture animals to sell them locally or for the global trade in wildlife
+                <br>
+                Most countries around the world have made laws to stop or limit hunting of endangered species. A treaty called, The Convention on International Trade in Endangered Species of Wild Fauna and Flora (CITES) has been signed by most countries.
+                <br>
+                Though many animals are protected from hunting, it does not stop some people from hunting them illegally. This is called poaching. Poaching happens all over the world, because poachers can get a lot of money for their illegal game. They sell the horns, ivory, body parts, and skin of protected animals. 
+                <br>
+                Wildlife trading is a major black market that has increased alongside rising wealth in Asia—a major consumer of wildlife—and the advent of e-commerce and social media websites. 
+              </p>
+            </div>
+            <div class="xtraimg">
+              <img src="habitat/rhino.jpg" class="rhino">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="abtmaind" id="upwork">
+      <div> <p class="abtp1">ABOUT ME</p></div>
+      <div class="abtd1">
+        <p class="abtpp1">
+          I am Chioke Emmanuel and I am a Web Developer you can view my Upwork profile by clicking <a href="https://www.upwork.com/freelancers/~01c7d74c0e14c624a0?viewMode=1" target="_blank">Here</a><br>
+          This is a short Website made to add to my portfolio and at the same time create awareness towards Wildlife threatened by extinction.<br>
+          To contact me, Kindly fill the following.
+        </p>
+      </div>
+      <div class="email-sender">
+        <form onsubmit="sendEmail(); reset(); return false;">
+          <input placeholder="Your name" type="text" id="name" required>
+          <input type="email" placeholder="Email id" id="email">
+          <input type="text" placeholder="Phone Number" id="no">
+          <textarea id="message" rows="4" placeholder="How may I help you?"></textarea>
+          <button type="submit" class="submit-button">Submit</button>
+          </form>
+      </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail() {
+        Email.send({
+        SecureToken : "74329f98-e09e-4e4e-b314-c4f01e1c69ee",
+        To : 'chiokeupworks@gmail.com',
+        From : document.getElementById('email').value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById('name').value
+        + '<br> Email: ' + document.getElementById('email').value
+        + '<br> Phone Number: ' + document.getElementById('no').value
+        + '<br> Message: ' + document.getElementById('message').value
+    }).then(
+      message => alert(message)
+  );
+      }
+    </script>
+  </body>
+</html>
